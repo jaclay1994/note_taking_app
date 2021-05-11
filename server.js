@@ -18,10 +18,6 @@ app.use(express.static("public"));
 require('./routes/apiNotes')(app);
 require('./routes/htmlRoutes')(app);
 
-
-
-
-
 // Create New Characters - takes in JSON input
 app.post('/api/characters', (req, res) => {
 //   // req.body hosts is equal to the JSON post sent from the user

@@ -44,7 +44,7 @@ module.exports = (app) => {
 
   // I added this below code so you could clear out the table while working with the functionality.
   // Don"t worry about it!
-  app.delete('/api/notes', (req, res) => {
+  app.delete('/api/notes/:title', (req, res) => {
    notedb.splice(req.params.title);
   }) 
 
